@@ -1,0 +1,41 @@
+#include<iostream>
+#include <string.h>
+using namespace std;
+char resultado[80]="";
+char palabra[100];
+int i=0,j=0;
+
+int no_repetitions()
+{
+    {
+    if(!strchr(resultado,palabra[i]))
+    resultado[j++]=palabra[i];
+    i++;
+
+     }
+    return 0;
+}
+
+int imprimir()
+{
+    resultado[j]='\0';
+    cout<<("\nEl resultado seria!\n%s",resultado);
+
+
+}
+int  main()
+{
+
+cout<<"Ingresa una frase\n";
+cin>>("%s",palabra);
+while(palabra[i])
+    no_repetitions();
+    imprimir();
+
+}
+
+
+
+
+
+
